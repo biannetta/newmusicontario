@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+body {
+  align-items: center;
+  background: #000;
+  color: rgba(0,0,0,0.87);
+  display: flex;
+  font-family: 'Press Start 2P', cursive, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+#message {color: white;}
+@media (max-width: 600px) {
+  body, #message { margin-top: 0; background: white; box-shadow: none; }
+  body { border-top: 16px solid #ffa100; }
+}
