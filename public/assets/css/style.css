@@ -1,17 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Open+Sans+Condensed:300');
 body {
   align-items: center;
   background: #000;
-  color: rgba(0,0,0,0.87);
+  color: white;
   display: flex;
-  font-family: 'Press Start 2P', cursive, Helvetica, Arial, sans-serif;
+  flex-direction: column;
+  font-family: 'Open Sans Condensed', sans-serif;
+  justify-content: space-between;
   min-height: 100vh;
-  justify-content: center;
   margin: 0;
-  padding: 0;
 }
-#message {color: white;}
-@media (max-width: 600px) {
-  body, #message { margin-top: 0; background: white; box-shadow: none; }
-  body { border-top: 16px solid #ffa100; }
+header {
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+nav {
+  align-items: stretch;
+  display: flex;
+}
+nav > a {
+  align-self: flex-end;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+nav > a:hover {
+  background-color: rgba(202, 202, 202, 0.2);
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  margin-left: 15px;
+  text-align: center;
+}
+.brand > .top {
+  font-variant: small-caps;
+  letter-spacing: 1.5px;
+}
+.brand > .bottom {
+  letter-spacing: 1.5px;
+  margin-top: -25px;
+}
+.content {
+  position: relative;
+}
+.banner {
+  width: 100vw;
+}
+.announcement {
+  background-color: rgba(236, 106, 36, 0.6);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+.contact {
+  font-size: 25px;
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  .announcement {font-size: 30px;}
+  .contact {font-size: 20px;}
 }
